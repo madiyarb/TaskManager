@@ -6,6 +6,7 @@ using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using ProjectManager.Application.Contracts;
+using ProjectManager.Domain.Complementary;
 using ProjectManager.Domain.Entities;
 using ServiceContracts.Project.Commands;
 using ServiceContracts.Project.Models;
@@ -34,6 +35,7 @@ public class CreateCommandHandler : IRequestHandler<CreateProjectCommand, Result
         try
         {
             ProjectDbModel project = _mapper.Map<ProjectDbModel>(request);
+            project.State = StateEnums.NotStarted;
             var result = await _projectRepository.AddAsync(project);
             return Result.Success(_mapper.Map<ProjectVm>(result));
         }
