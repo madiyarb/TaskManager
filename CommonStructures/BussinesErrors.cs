@@ -1,5 +1,6 @@
 ﻿namespace CommonStructures;
 
-public class Class1
+public enum BussinesErrors
 {
+    
 }
