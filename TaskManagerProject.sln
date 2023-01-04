@@ -1,34 +1,44 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BFD63054-1CCB-447D-B396-1685B19887AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskManager", "TaskManager", "{3B96E04B-63CF-40CD-BD45-D14761DB2BBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.API", "TaskManager.API\TaskManager.API.csproj", "{B486D04F-C1BB-4054-94E4-41FF16F29243}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.API", "TaskManager.API\TaskManager.API.csproj", "{B486D04F-C1BB-4054-94E4-41FF16F29243}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Application", "TaskManager.Application\TaskManager.Application.csproj", "{AE8DCD73-5FF2-4DC5-93DB-2F02390910C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Application", "TaskManager.Application\TaskManager.Application.csproj", "{AE8DCD73-5FF2-4DC5-93DB-2F02390910C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Domain", "TaskManager.Domain\TaskManager.Domain.csproj", "{7F89939F-1347-4962-9F00-DEE4FFAFB99D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Domain", "TaskManager.Domain\TaskManager.Domain.csproj", "{7F89939F-1347-4962-9F00-DEE4FFAFB99D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Infrastucture", "TaskManager.Infrastucture\TaskManager.Infrastucture.csproj", "{B58E9E87-637E-4A5E-ADBC-86539689D517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Infrastucture", "TaskManager.Infrastucture\TaskManager.Infrastucture.csproj", "{B58E9E87-637E-4A5E-ADBC-86539689D517}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{B7B5C5D4-D853-4491-8136-0484B2041D2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonRepository", "CommonRepository\CommonRepository.csproj", "{4F441EFB-13E1-4BF9-AD2F-4BA083AE416E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonRepository", "CommonRepository\CommonRepository.csproj", "{4F441EFB-13E1-4BF9-AD2F-4BA083AE416E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonStructures", "CommonStructures\CommonStructures.csproj", "{821289C2-2200-45E7-9A92-E0DC0CF17DC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonStructures", "CommonStructures\CommonStructures.csproj", "{821289C2-2200-45E7-9A92-E0DC0CF17DC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransferLib", "DataTransferLib\DataTransferLib.csproj", "{01BF639E-D1D8-4527-9E5B-D2ECC8C17546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTransferLib", "DataTransferLib\DataTransferLib.csproj", "{01BF639E-D1D8-4527-9E5B-D2ECC8C17546}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectManager", "ProjectManager", "{88EE1B3C-A897-4354-B56D-DEC2F0F68661}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager.API", "ProjectManager.API\ProjectManager.API.csproj", "{117C7BD6-A4AE-4445-BC36-BD06DE44879F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectManager.API", "ProjectManager.API\ProjectManager.API.csproj", "{117C7BD6-A4AE-4445-BC36-BD06DE44879F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{10CE78C6-59B4-4236-9071-492E6BDFE7BA} = {10CE78C6-59B4-4236-9071-492E6BDFE7BA}
+		{747CFCD4-C6AA-4C16-A913-7B10B2AAA9BA} = {747CFCD4-C6AA-4C16-A913-7B10B2AAA9BA}
+		{C14ED5D3-85EF-491B-AD31-887C43B11D16} = {C14ED5D3-85EF-491B-AD31-887C43B11D16}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager.Application", "ProjectManager.Application\ProjectManager.Application.csproj", "{C14ED5D3-85EF-491B-AD31-887C43B11D16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectManager.Application", "ProjectManager.Application\ProjectManager.Application.csproj", "{C14ED5D3-85EF-491B-AD31-887C43B11D16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager.Domain", "ProjectManager.Domain\ProjectManager.Domain.csproj", "{747CFCD4-C6AA-4C16-A913-7B10B2AAA9BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectManager.Domain", "ProjectManager.Domain\ProjectManager.Domain.csproj", "{747CFCD4-C6AA-4C16-A913-7B10B2AAA9BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManager.Infrastructure", "ProjectManager.Infrastructure\ProjectManager.Infrastructure.csproj", "{10CE78C6-59B4-4236-9071-492E6BDFE7BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectManager.Infrastructure", "ProjectManager.Infrastructure\ProjectManager.Infrastructure.csproj", "{10CE78C6-59B4-4236-9071-492E6BDFE7BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceContracts", "ServiceContracts\ServiceContracts.csproj", "{ECF142E9-5341-4D23-807D-B93B15E8B8C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +90,13 @@ Global
 		{10CE78C6-59B4-4236-9071-492E6BDFE7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10CE78C6-59B4-4236-9071-492E6BDFE7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10CE78C6-59B4-4236-9071-492E6BDFE7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF142E9-5341-4D23-807D-B93B15E8B8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF142E9-5341-4D23-807D-B93B15E8B8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF142E9-5341-4D23-807D-B93B15E8B8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF142E9-5341-4D23-807D-B93B15E8B8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3B96E04B-63CF-40CD-BD45-D14761DB2BBE} = {BFD63054-1CCB-447D-B396-1685B19887AC}
@@ -95,5 +112,9 @@ Global
 		{C14ED5D3-85EF-491B-AD31-887C43B11D16} = {88EE1B3C-A897-4354-B56D-DEC2F0F68661}
 		{747CFCD4-C6AA-4C16-A913-7B10B2AAA9BA} = {88EE1B3C-A897-4354-B56D-DEC2F0F68661}
 		{10CE78C6-59B4-4236-9071-492E6BDFE7BA} = {88EE1B3C-A897-4354-B56D-DEC2F0F68661}
+		{ECF142E9-5341-4D23-807D-B93B15E8B8C2} = {B7B5C5D4-D853-4491-8136-0484B2041D2A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30CFCA6E-E9D9-4DBF-9A1B-25E7CA94BC29}
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,11 @@
-﻿namespace ServiceContracts.Project.Commands;
+﻿using Ardalis.Result;
+using MediatR;
+using ServiceContracts.Project.Models;
 
-public class CreateProjectCommand
+namespace ServiceContracts.Project.Commands;
+
+public class CreateProjectCommand : IRequest<Result<ProjectVm>>
 {
-    
+    public string Name { get; set; }
+    public string Description { get; set; }
 }

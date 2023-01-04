@@ -39,6 +39,7 @@ public abstract class BaseRepository<TEntity, TContext> : IBaseRepository<TEntit
     {
         entity.CreatedDate = DateTime.Now;
         entity.LastModifiedDate = DateTime.Now;
+        entity.CompletionDate = null;
         Context.Set<TEntity>().Add(entity);
         await Context.SaveChangesAsync();
         return entity;

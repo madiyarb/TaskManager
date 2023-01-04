@@ -2,5 +2,6 @@
 
 public enum BussinesErrors
 {
-    
+    UnknownError,
+    NotFound
 }

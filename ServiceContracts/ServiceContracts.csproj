@@ -7,11 +7,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\DataTransferLib\DataTransferLib.csproj" />
       <ProjectReference Include="..\ProjectManager.Domain\ProjectManager.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Project" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR.Contracts" Version="1.0.1" />
     </ItemGroup>
 
 </Project>
