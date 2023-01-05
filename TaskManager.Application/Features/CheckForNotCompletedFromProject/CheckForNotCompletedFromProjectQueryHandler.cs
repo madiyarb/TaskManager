@@ -4,6 +4,7 @@ using CommonStructures;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using ServiceContracts.Project.Queries;
+using ServiceContracts.Task.Queries;
 using TaskManager.Application.Contracts;
 
 namespace TaskManager.Application.Features.CheckForNotCompletedFromProject;

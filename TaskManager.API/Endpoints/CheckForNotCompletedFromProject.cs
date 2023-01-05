@@ -4,6 +4,7 @@ using DataTransferLib.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ServiceContracts.Project.Queries;
+using ServiceContracts.Task.Queries;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace TaskManager.API.Endpoints;

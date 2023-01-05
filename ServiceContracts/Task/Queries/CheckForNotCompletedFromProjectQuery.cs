@@ -1,7 +1,7 @@
 ﻿using Ardalis.Result;
 using MediatR;
 
-namespace ServiceContracts.Project.Queries;
+namespace ServiceContracts.Task.Queries;
 
 public class CheckForNotCompletedFromProjectQuery : IRequest<Result<bool>>
 {
