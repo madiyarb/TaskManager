@@ -5,5 +5,5 @@ namespace TaskManager.Application.Contracts;
 
 public interface ITaskRepository : IBaseRepository<TaskDbModel>
 {
-    
+    Task<bool> CheckForNotCompletedFromProject(int id);
 }

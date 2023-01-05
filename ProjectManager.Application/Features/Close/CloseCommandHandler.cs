@@ -37,8 +37,8 @@ public class CloseCommandHandler : IRequestHandler<CloseProjectCommand, Result<D
 
             if (request.HaveNotComletedTasks)
             {
-                _logger.LogWarning($"{BussinesErrors.HaveNotCompletedTasks.ToString()}: Have not comleted tasks in project {request.Id} id");
-                return Result.Error($"{BussinesErrors.HaveNotCompletedTasks.ToString()}: Have not comleted tasks in project {request.Id} id");
+                _logger.LogWarning($"{BussinesErrors.HaveNotCompletedTasks.ToString()}: Have comleted tasks in project {request.Id} id");
+                return Result.Error($"{BussinesErrors.HaveNotCompletedTasks.ToString()}: Have comleted tasks in project {request.Id} id");
             }
             project.CompletionDate = DateTime.Now;
             await _projectRepository.UpdateAsync(project);
