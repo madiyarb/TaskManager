@@ -5,5 +5,6 @@ public enum BussinesErrors
     UnknownError,
     NotFound,
     StateNotDone,
-    ListIsEmpty
+    ListIsEmpty,
+    InvalidCastException
 }
