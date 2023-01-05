@@ -43,7 +43,8 @@ public class ProjectController : Controller
     [HttpPost]
     [SwaggerOperation(
         Summary = "Close the project",
-        Description = "Set CompletionDate field"
+        Description = "Set CompletionDate field" +
+                      "Do not populate property(object) <<NotComletedTasks>>"
     )]
     public async Task<ActionResult<DefaultResponseObject<string>>> Close([FromBody] CloseProjectCommand request)
     {
