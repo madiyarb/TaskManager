@@ -29,4 +29,16 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CommonRepository\CommonRepository.csproj" />
+      <ProjectReference Include="..\CommonStructures\CommonStructures.csproj" />
+      <ProjectReference Include="..\ProjectManager.Application\ProjectManager.Application.csproj" />
+      <ProjectReference Include="..\ServiceContracts\ServiceContracts.csproj" />
+      <ProjectReference Include="..\TaskManager.Domain\TaskManager.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Features\GetAllFromProject" />
+    </ItemGroup>
+
 </Project>

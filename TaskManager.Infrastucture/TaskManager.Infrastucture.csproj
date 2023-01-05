@@ -25,4 +25,9 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TaskManager.Application\TaskManager.Application.csproj" />
+      <ProjectReference Include="..\TaskManager.Domain\TaskManager.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -9,10 +9,7 @@
     <ItemGroup>
       <ProjectReference Include="..\DataTransferLib\DataTransferLib.csproj" />
       <ProjectReference Include="..\ProjectManager.Domain\ProjectManager.Domain.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Project" />
+      <ProjectReference Include="..\TaskManager.Domain\TaskManager.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>

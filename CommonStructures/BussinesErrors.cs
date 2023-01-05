@@ -3,5 +3,7 @@
 public enum BussinesErrors
 {
     UnknownError,
-    NotFound
+    NotFound,
+    StateNotDone,
+    ListIsEmpty
 }
