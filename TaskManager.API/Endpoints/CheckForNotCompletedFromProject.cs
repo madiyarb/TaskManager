@@ -22,13 +22,13 @@ public class CheckForNotCompletedFromProject : EndpointBaseAsync
         _mapper = mapper;
     }
 
-    [HttpPost("/Task/CheckForNotCompletedFromProject")]
+    [HttpGet("/Task/CheckForNotCompletedFromProject")]
     [SwaggerOperation(
         Summary = "Check for not completed tasks from project",
         Description = "need to pass the id in the query string",
         Tags = new[] { "Task" })
     ]
-    public override async Task<ActionResult<DefaultResponseObject<bool>>> HandleAsync(CheckForNotCompletedFromProjectQuery request,
+    public override async Task<ActionResult<DefaultResponseObject<bool>>> HandleAsync([FromQuery]CheckForNotCompletedFromProjectQuery request,
         CancellationToken cancellationToken = new CancellationToken())
     {
         var result = await _mediator.Send(request, cancellationToken);
