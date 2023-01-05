@@ -11,7 +11,7 @@ using ServiceContracts.Project.Queries;
 
 namespace ProjectManager.Application.Features.Delete;
 
-public class DeleteCommandHandler : IRequestHandler<DeleteProjectCommandHandler, Result<string>>
+public class DeleteCommandHandler : IRequestHandler<DeleteProjectCommand, Result<string>>
 {
     private readonly IProjectRepository _projectRepository;
     private readonly IMapper _mapper;
@@ -24,7 +24,7 @@ public class DeleteCommandHandler : IRequestHandler<DeleteProjectCommandHandler,
         _logger = logger;
     }
 
-    public async Task<Result<string>> Handle(DeleteProjectCommandHandler request, CancellationToken cancellationToken)
+    public async Task<Result<string>> Handle(DeleteProjectCommand request, CancellationToken cancellationToken)
     {
         try
         {

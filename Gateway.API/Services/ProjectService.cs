@@ -35,4 +35,9 @@ public class ProjectService : IProjectService
     {
         return await ExtendedHttpClient.PostAndReturnResponseAsync<EditProjectCommand, DefaultResponseObject<string>>(request, $"/Project/Edit");
     }
+
+    public async Task<DefaultResponseObject<string>> Delete(DeleteProjectCommand request)
+    {
+        return await ExtendedHttpClient.PostAndReturnResponseAsync<DeleteProjectCommand, DefaultResponseObject<string>>(request, $"/Project/Delete");
+    }
 }
