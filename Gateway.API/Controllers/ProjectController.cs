@@ -50,4 +50,15 @@ public class ProjectController : Controller
         var response = await _projectService.Close(request);
         return Ok(response);
     }
+    
+    [HttpPost]
+    [SwaggerOperation(
+        Summary = "Edit the project",
+        Description = "It is necessary to pass the name, state and description in the request body"
+    )]
+    public async Task<ActionResult<DefaultResponseObject<string>>> Edit([FromBody] EditProjectCommand request)
+    {
+        var response = await _projectService.Edit(request);
+        return Ok(response);
+    }
 }

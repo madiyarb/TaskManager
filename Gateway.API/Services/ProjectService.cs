@@ -30,4 +30,9 @@ public class ProjectService : IProjectService
     {
         return await ExtendedHttpClient.PostAndReturnResponseAsync<CreateProjectCommand, DefaultResponseObject<ProjectVm>>(request, $"/Project/Create");
     }
+
+    public async Task<DefaultResponseObject<string>> Edit(EditProjectCommand request)
+    {
+        return await ExtendedHttpClient.PostAndReturnResponseAsync<EditProjectCommand, DefaultResponseObject<string>>(request, $"/Project/Edit");
+    }
 }

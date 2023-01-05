@@ -12,4 +12,5 @@ public interface IProjectService : IUseExtendedHttpClient<IProjectService>
     Task<DefaultResponseObject<ProjectVm>> GetProject(GetProjectQuery request);
     Task<DefaultResponseObject<string>> Close(CloseProjectCommand request);
     Task<DefaultResponseObject<ProjectVm>> Create(CreateProjectCommand request);
+    Task<DefaultResponseObject<string>> Edit(EditProjectCommand request);
 }

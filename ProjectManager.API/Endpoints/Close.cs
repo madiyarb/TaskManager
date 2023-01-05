@@ -25,7 +25,8 @@ public class Close : EndpointBaseAsync
     [HttpPost("/Project/Close")]
     [SwaggerOperation(
         Summary = "Close the project",
-        Description = "Set CompletionDate field",
+        Description = "Set CompletionDate field" +
+                      "Do not populate property(object) <<NotComletedTasks>>",
         Tags = new[] { "Project" })
     ]
     public override async Task<ActionResult<DefaultResponseObject<DefaultResponseObject<string>>>> HandleAsync([FromBody]CloseProjectCommand request, CancellationToken cancellationToken = new CancellationToken())

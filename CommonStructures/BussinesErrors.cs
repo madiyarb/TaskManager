@@ -6,5 +6,6 @@ public enum BussinesErrors
     NotFound,
     StateNotDone,
     ListIsEmpty,
-    InvalidCastException
+    InvalidCastException,
+    HaveNotCompletedTasks
 }
