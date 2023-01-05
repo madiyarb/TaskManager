@@ -7,5 +7,6 @@ public enum BussinesErrors
     StateNotDone,
     ListIsEmpty,
     InvalidCastException,
-    HaveNotCompletedTasks
+    HaveNotCompletedTasks,
+    ProjectNotCompleted
 }
