@@ -42,6 +42,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceContracts", "Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedHttpClient", "ExtendedHttpClient\ExtendedHttpClient.csproj", "{4F0D91E6-FC42-46E6-B50B-7813B76BAC2A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{E95E78E9-C945-4D86-8437-0473586F4055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.API", "Gateway.API\Gateway.API.csproj", "{74029A89-8802-4F7B-B193-2B3752A2D078}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,6 +104,10 @@ Global
 		{4F0D91E6-FC42-46E6-B50B-7813B76BAC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F0D91E6-FC42-46E6-B50B-7813B76BAC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F0D91E6-FC42-46E6-B50B-7813B76BAC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74029A89-8802-4F7B-B193-2B3752A2D078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74029A89-8802-4F7B-B193-2B3752A2D078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74029A89-8802-4F7B-B193-2B3752A2D078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74029A89-8802-4F7B-B193-2B3752A2D078}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,6 +128,7 @@ Global
 		{10CE78C6-59B4-4236-9071-492E6BDFE7BA} = {88EE1B3C-A897-4354-B56D-DEC2F0F68661}
 		{ECF142E9-5341-4D23-807D-B93B15E8B8C2} = {B7B5C5D4-D853-4491-8136-0484B2041D2A}
 		{4F0D91E6-FC42-46E6-B50B-7813B76BAC2A} = {B7B5C5D4-D853-4491-8136-0484B2041D2A}
+		{74029A89-8802-4F7B-B193-2B3752A2D078} = {E95E78E9-C945-4D86-8437-0473586F4055}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30CFCA6E-E9D9-4DBF-9A1B-25E7CA94BC29}
